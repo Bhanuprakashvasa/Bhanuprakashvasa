@@ -1,0 +1,25 @@
+1)COMPARE TWO JSON'S
+
+var a={name:"person 1",age:5};
+var b={age:5,name:"person 1"};
+
+
+console.log(JSON.stringify(a)==JSON.stirngify(b));
+o/p=>false
+
+
+2)DISPLAY URL IN CONSOLE
+
+var request=new XMLHttpRequest();
+        request.open('GET','https://restcountries.com/v3.1/all')
+        request.send()
+        request.onload=function()
+        {
+            var data=request.response
+            console.log(JSON.parse(data))
+            var result=JSON.parse(data)
+            for(i=0;i<=result.length;i++)
+            {
+                console.log(result)
+            }
+        }
