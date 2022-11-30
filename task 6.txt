@@ -1,0 +1,78 @@
+//GET PG PROBLEM
+class film{
+            constructor(title,studio,rating){
+                this.titlt=title,
+                this.studio=studio
+                //this.rating=rating
+                if(rating==undefined){
+                    this.rating="PG"
+                }
+                
+                else{
+                    this.rating="rating"
+                }
+                getPG(array){
+                console.log("hello",array)
+                }
+            
+        }
+
+        }
+        var f1=new film("pushpa","mythri")
+        console.log(f1)
+        var f2=new film("abcd","xyz","PG")
+        console.log(f2)
+        var f3=new film("abc","pvr")
+        console.log(f3)
+        let arr=[f1,f2,f3]
+
+        f1.getPG(arr)
+
+
+
+
+
+
+//person details
+class details{
+            constructor(name,age,weigth,height)
+            {
+                this.name=name,
+                this.age=age,
+                this.weigth=weigth,
+                this.height=height
+            }
+        }
+        var p1=new details("Jayath",23,78,5.6)
+        console.log(p1)
+        var p2=new details("kiran",24,66,5.7)
+        console.log(p2)
+
+
+
+
+
+
+//uber price
+
+        class uber{
+            constructor(km){
+                this.km=km,
+                this.p=km*30
+
+
+            }
+            getPrice(){
+                return `price is ${this.p}`
+            }
+            applydiscount(){
+                var discount=(25/this.p)*100
+                console.log(discount)
+                var discountPrice=this.p-discount
+                return`discounted price ${discountPrice}`
+
+            }
+        }
+        var t1=new uber(2)
+        console.log(t1.getPrice())
+        console.log(t1.applydiscount())
